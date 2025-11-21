@@ -1,0 +1,63 @@
+/* ============ GLOBAL STYLE ============ */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAFAFA;
+    color: #1F2937;
+}
+
+h1, h2, h3, .serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Card hover effect */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Hide scrollbar (modal content) */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ============ MODAL ANIMATION ============ */
+#foodModal {
+    transition: opacity .3s ease;
+}
+
+#modalBackdrop {
+    transition: opacity .3s ease;
+}
+
+#modalPanel {
+    transition: 
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+/* ============ NAVBAR ============ */
+nav {
+    backdrop-filter: blur(12px);
+}
+
+/* Smooth link hover */
+a {
+    transition: color .3s ease;
+}
+
+/* Optional badge styling if you want reusable badges */
+.badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
